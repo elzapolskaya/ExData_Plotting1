@@ -12,7 +12,7 @@ plot3 <- function() {
         dt<-as.POSIXlt(paste(adata$Date, adata$Time, sep = " "), tz = "GMT")
         
         # Create PNG file
-        png("plot3.png", width = 480, height = 480)
+        png("plot3.png", width = 480, height = 480, bg = "transparent")
         # Create plot
         plot(dt, 
              adata$Sub_metering_3, 

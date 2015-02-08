@@ -12,7 +12,7 @@ plot4 <- function() {
         dt<-as.POSIXlt(paste(adata$Date, adata$Time, sep = " "), tz = "GMT")
         
         # Create PNG file
-        png("plot4.png", width = 480, height = 480)
+        png("plot4.png", width = 480, height = 480, bg = "transparent")
         # Create plot
         par(mfrow = c(2, 2))
         with(adata, {

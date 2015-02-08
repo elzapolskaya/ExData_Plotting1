@@ -12,7 +12,7 @@ plot2 <- function() {
         dt<-as.POSIXlt(paste(adata$Date, adata$Time, sep = " "), tz = "GMT")
         
         # Create PNG file
-        png("plot2.png", width = 480, height = 480)
+        png("plot2.png", width = 480, height = 480, bg = "transparent")
         # Create plot
         plot(dt, 
              adata$Global_active_power, 

@@ -11,7 +11,7 @@ plot1 <- function() {
         adata<-data[data$Date>=as.Date("2007-02-01") & data$Date<=as.Date("2007-02-02"), ]
         
         # Create PNG file
-        png("plot1.png", width = 480, height = 480)
+        png("plot1.png", width = 480, height = 480, bg = "transparent")
         # Histogram
         hist(adata$Global_active_power, 
              col = "red", 
